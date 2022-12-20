@@ -1,0 +1,268 @@
+// Start Break Points
+$breakPoints: (
+  'small': '767px',
+  'medium1': '768px',
+  'medium2': '991px',
+  'large1': '992px',
+  'large2': '1199px',
+  'xLarge': '1200px',
+);
+
+@mixin small() { // for phone sizes
+  @media only screen and (max-width: map-get($breakPoints, 'small')) {
+    @content;
+  }
+}
+
+@mixin medium() { // for small tablet and laptops
+  @media only screen and (min-width: map-get($breakPoints, 'medium1')) and (max-width: map-get($breakPoints, 'medium2')) {
+    @content;
+  }
+}
+
+@mixin maxMedium() { // for small tablet and laptops
+  @media only screen and (max-width: map-get($breakPoints, 'medium2')) {
+    @content;
+  }
+}
+
+@mixin large() { // for big laptops & pc
+  @media only screen and (min-width: map-get($breakPoints, 'large1')) and (max-width: map-get($breakPoints, 'large2')) {
+    @content;
+  }
+}
+
+@mixin minLarge() { // for big laptops & pc
+  @media only screen and (min-width: map-get($breakPoints, 'large1')) {
+    @content;
+  }
+}
+
+@mixin maxLarge() { // for big laptops & pc
+  @media only screen and (max-width: map-get($breakPoints, 'large2')) {
+    @content;
+  }
+}
+
+@mixin xLarge() { // for big screens
+  @media only screen and (min-width: map-get($breakPoints, 'xLarge')) {
+    @content;
+  }
+}
+// End Break Points
+
+// @media screen and (max-width: 676px) {
+//   // Global Roles
+//   .section {
+//     padding: 2rem 2.5rem;
+//   }
+
+//   // About Section
+//   .about-container {
+//     grid-template-columns: 1fr;
+
+//     .left-about {
+//       padding-right: 0;
+
+//       p {
+//         padding-left: 0;
+//       }
+//     }
+
+//     .right-about {
+//       grid-template-columns: 1fr;
+//       padding-top: 2.5rem;
+//     }
+//   }
+
+//   .timeline {
+//     grid-template-columns: 1fr;
+//     padding-bottom: 6rem;
+//   }
+
+//   // Portfolio Section
+//   .portfolios {
+//     grid-template-columns: 1fr !important;
+//     padding-bottom: 6rem;
+//   }
+
+//   // Blogs Section
+//   .blogs-content {
+//     .blogs {
+//       grid-template-columns: 1fr;
+//       padding-bottom: 6rem;
+//     }
+//   }
+
+//   // Contact Section
+//   .contact-content-cont {
+//     flex-direction: column;
+
+//     .right-contact {
+//       margin-left: 0;
+//       margin-top: 2.5rem;
+
+//       .contact-form {
+//         .input-control.i-c2 {
+//           flex-direction: column;
+
+//           :last-child {
+//             margin-left: 0;
+//             margin-top: 1.5rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .main-title {
+//     h2 {
+//       font-size: 2rem;
+
+//       span {
+//         font-size: 2.4rem;
+//       }
+
+//       .bg-text {
+//         font-size: 2.8rem;
+//       }
+//     }
+//   }
+
+//   .theme-btn {
+//     width: 50px;
+//     height: 50px;
+//   }
+// }
+
+// @media screen and (max-width: 1440px) {
+//   // Global Roles
+//   .section {
+//     padding: 6rem 7.5rem 4rem;
+//   }
+
+//   // Header Section
+//   header {
+//     padding: 0 !important;
+//   }
+
+//   // Contact Section
+//   .contact-content-cont {
+//     flex-direction: column;
+
+//     .right-contact {
+//       margin-left: 0 !important;
+//       margin-top: 2.5rem;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 1070px) {
+//   // About Section
+//   .about-container {
+//     grid-template-columns: 1fr;
+
+//     .right-about {
+//       padding-top: 2.5rem;
+//     }
+//   }
+
+//   .portfolios,
+//   .blogs {
+//     grid-template-columns: 1fr !important;
+//   }
+
+//   .main-title {
+//     h2 {
+//       font-size: 4rem;
+
+//       span {
+//         font-size: 4rem;
+//       }
+
+//       .bg-text {
+//         font-size: 5rem;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 970px) {
+//   .section {
+//     padding: 6rem;
+//   }
+
+//   // Header Section
+//   header {
+//     padding: 0;
+//     min-height: 100vh;
+
+//     .header-content {
+//       grid-template-columns: 1fr;
+//       padding-bottom: 6rem;
+
+//       .left-header {
+//         .h-shape {
+//           display: none;
+//         }
+
+//         .image {
+//           margin: 0 auto;
+//           max-width: 90%;
+//         }
+//       }
+
+//       .right-header {
+//         padding: 0;
+//         grid-row: 1;
+//         width: 90%;
+//         margin: 0 auto;
+
+//         .name {
+//           font-size: 2.5rem;
+//         }
+//       }
+//     }
+//   }
+
+//   // Controls Section
+//   .controls {
+//     top: auto;
+//     bottom: 0;
+//     left: 50%;
+//     flex-direction: row;
+//     -webkit-transform: translateX(-50%);
+//     -moz-transform: translateX(-50%);
+//     -ms-transform: translateX(-50%);
+//     -o-transform: translateX(-50%);
+//     transform: translateX(-50%);
+//     width: 100%;
+//     background-color: var(--color-grey-5);
+
+//     .control {
+//       margin: 0.6rem 1.5rem;
+//     }
+//   }
+
+//   .contact-form {
+//     .input-control.i-c2 {
+//       flex-direction: column;
+
+//       :last-child {
+//         margin-left: 0;
+//         margin-top: 1.5rem;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 700px) {
+//   .section {
+//     padding: 7rem 3rem;
+//   }
+//   .about-stats {
+//     .progress-bars {
+//       grid-template-columns: 1fr;
+//     }
+//   }
+// }

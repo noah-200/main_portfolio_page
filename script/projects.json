@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Photo Editor",
+    "desc": "This is a Web Page I Create to Edit Photos With CSS Filters",
+    "img": "./img/projects/photo_editor.png",
+    "links": {
+      "live": "https://noah-200.github.io/Photo_Editor/",
+      "code": "https://github.com/noah-200/"
+    }
+  },
+  {
+    "name": "CRUDS Project",
+    "desc": "CRUDS Project is a project I made to train on DOM JS",
+    "img": "./img/projects/CRUDS_Project.png",
+    "links": {
+      "live": "https://noah-200.github.io/CRUDS_Project/",
+      "code": "https://github.com/noah-200/CRUDS_Project/"
+    }
+  },
+  {
+    "name": "Bondi Project",
+    "desc": "This is a web page I made to train on Bootstrap frame work",
+    "img": "./img/projects/Bondi_Project.png",
+    "links": {
+      "live": "https://noah-200.github.io/Bondi_Project/",
+      "code": "https://github.com/noah-200/Bondi_Project/"
+    }
+  },
+  {
+    "name": "Social Media Dashboard",
+    "desc": "Social Media Dashboard With Theme Toggle",
+    "img": "./img/projects/social-media-dashboard.png",
+    "links": {
+      "live": "https://noah-200.github.io/Social-Media-Dashbord/",
+      "code": "https://github.com/noah-200/Social-Media-Dashbord/"
+    }
+  },
+  {
+    "name": "Kasper Template",
+    "desc": "Online web page with only HTML & CSS",
+    "img": "./img/projects/kasper-template.png",
+    "links": {
+      "live": "https://noah-200.github.io/kasper-template/",
+      "code": "https://github.com/noah-200/kasper-template/"
+    }
+  },
+  {
+    "name": "Leon Project",
+    "desc": "This is a Project I made Training on HTML & CSS",
+    "img": "./img/projects/Leon-Project.png",
+    "links": {
+      "live": "https://noah-200.github.io/Leon-Project/",
+      "code": "https://github.com/noah-200/Leon-Project/"
+    }
+  },
+  {
+    "name": "Noah Portfolio Page",
+    "desc": "This project I build to practice on building portfolio pages",
+    "img": "./img/projects/portfolio_page.png",
+    "links": {
+      "live": "https://noah-200.github.io/portfolio_page/",
+      "code": "https://github.com/noah-200/portfolio_page/"
+    }
+  }
+]
