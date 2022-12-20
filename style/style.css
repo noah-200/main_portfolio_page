@@ -468,7 +468,7 @@ body.light-mode .toggles .theme-btn::after {
   transition: all 0.4s ease-in-out;
 }
 .portfolio .portfolios .project-card .card-info p {
-  font-weight: 200;
+  font-weight: 300;
   color: var(--color-grey-2);
 }
 .portfolio .portfolios .project-card .card-info .links {
